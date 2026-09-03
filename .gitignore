@@ -1,0 +1,8 @@
+.venv/
+.env
+downloads/
+vector_db/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.vscode/
