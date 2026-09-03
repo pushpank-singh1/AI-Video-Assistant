@@ -8,27 +8,30 @@ ffmpeg-python>=0.2.0              # FFmpeg bindings (FFmpeg binary must be insta
 
 # ── Speech-to-Text (local Whisper) ────────────────────────────────────────────
 openai-whisper>=20231117          # OpenAI Whisper (runs locally)
-torch>=2.2.0   
+torch==2.2.2   
 torchvision==0.17.2                   # PyTorch backend for Whisper
-torchaudio>=2.2.0                 # Audio utilities for PyTorch
+torchaudio==2.2.0                 # Audio utilities for PyTorch
 
 # ── Translation (Hindi → English) ─────────────────────────────────────────────
 deep-translator>=1.11.4           # Lightweight translation wrapper (Google backend)
 
 # ── LLM Orchestration — LangChain LCEL + Mistral ──────────────────────────────
-langchain>=0.2.0
-langchain-core>=0.2.0
-langchain-community>=0.2.0
-langchain-mistralai>=0.1.0        # LangChain wrapper for Mistral API
+langchain==0.2.16
+langchain-core==0.2.38
+langchain-community==0.2.16
+langchain-mistralai==0.1.13        # LangChain wrapper for Mistral API
 mistralai>=0.4.0                  # Official Mistral Python client
 
 # ── RAG Pipeline ──────────────────────────────────────────────────────────────
-chromadb>=0.5.0                   # Local vector store
+chromadb>=0.5.0
 langchain-chroma
-sentence-transformers>=3.0.0      # HuggingFace embedding models
-langchain-huggingface>=0.0.3      # LangChain ↔ HuggingFace embeddings bridge
-huggingface-hub>=0.23.0           # Model downloading from HuggingFace Hub
-tiktoken>=0.7.0                   # Token counting for text splitting
+sentence-transformers==3.0.1
+transformers==4.44.2
+huggingface-hub==0.24.6
+accelerate==0.34.2
+peft==0.12.0
+langchain-huggingface>=0.0.3
+tiktoken>=0.7.0                  # Token counting for text splitting
 
 # ── Streamlit UI ──────────────────────────────────────────────────────────────
 streamlit>=1.35.0
